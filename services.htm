@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<!--
+*****************************************************************************
+Title: Bicycle Shop Services Page
+Use: Used to show table
+Author: Tyler Tocci
+School/Term: Southern Illinois University, Fall 2022
+Developed: Oct 29, 2022
+Tested: Oct 29, 2022; Passed on Edge and Chrome browsers.
+******************************************************************************
+-->
+
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Page Title</title>
+        <meta name="description" content="The website for Tocci's Bicylces
+        that contains basic information about the business">
+        <meta name="keywords" content="bicycles, BMX, cruiser, Pittsburgh, 
+        Pennsylvania">
+        <link rel= "stylesheet" href="First_Format.css">
+
+        <!--Code for SlickNav plugin-->
+        <link rel="stylesheet" href="mobile_menu/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="mobile_menu/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document) .ready (function() {
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+
+         <!--Code for Favicon-->
+         <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+         <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+
+</head>
+<body>
+    <header>
+        <h1>Services</h1>
+    </header>
+
+    <!--The navigation menu-->
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="rentals.htm">Rentals</a></li>
+            <li><a href="sales.htm">Sales</a></li>
+            <li><a href="services.htm" class="current">Services</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <p class="tables"> We offer the best service in Pittsburgh, with the fastest turn-around. 
+        We have all of the specialty tools to repair and overhaul the best mountain bikes and road bikes. 
+        We understand that every rider has different needs and goals. 
+        We will work on anything, and we treat every customer with the same respect.
+    </p>
+
+    
+    <!--The table listing the services-->
+    <table>
+    <caption>Services Offered</caption>    
+    <thead>
+        <tr>
+            <th>Service</th> 
+            <th>Description</th>
+            <th>Cost</th> 
+            <th>Estimated Time</th>
+        </tr>
+        <tr>
+            <th id ="cat_1" colspan="4">Checks and Adjustments</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Safety Check</td>
+            <td>Inspection of the main working parts</td>
+            <td>$25</td>
+            <td>20 minutes</td>
+        </tr>
+        <tr>
+            <td>Brake Adjustment</td>
+            <td>Ensures brakes are functioning properly</td>
+            <td>$20</td>
+            <td>15 minutes</td>
+        </tr>
+        <tr>
+            <td>Clean up and Lube</td>
+            <td>A clean bike rides better and lasts longer</td>
+            <td>$50</td>
+            <td>30 minutes</td>
+        </tr>
+        <tr>
+            <td>Seat and Handlebar Adjustments</td>
+            <td>Optimizes your riding position</td>
+            <td>$10</td>
+            <td>5 minutes</td> 
+        </tr>
+        <tr>
+            <td>Adjust Wheel Hubs</td>
+            <td>Properly adjusts to reduce wear</td>
+            <td>$15</td>
+            <td>10 minutes</td>
+        </tr>
+        <tr>
+            <td>Calibrate Gears</td>
+            <td>Fixes poorly indexed gears</td>
+            <td>$25</td>
+            <td>20 minutes</td>
+        </tr>
+
+        <tr>
+            <td id="cat_2" colspan="4">Replacements and Repairs</td>
+        </tr>
+
+        <tr>
+            <td>Cable Replacement</td>
+            <td>Replacement of worn or damaged cables</td>
+            <td>$60</td>
+            <td>45 minutes</td>
+        </tr>
+        <tr>
+            <td>Parts Replacement</td>
+            <td>Replacement of any desired part</td>
+            <td>Varies</td>
+            <td>Varies</td>
+        </tr>
+        <tr>
+            <td>Repair Bike Chain</td>
+            <td>Repairs a stretched or bent chain</td>
+            <td>$40</td>
+            <td>30 minutes</td>
+        </tr>
+        <tr>
+            <td>Tire Repair</td>
+            <td>For patching a punctured tire</td>
+            <td>$25</td>
+            <td>20 minutes</td>
+        </tr>
+        <tr>
+            <td>Other Miscellaneous Repairs</td>
+            <td>Any other type of repair</td>
+            <td>Varies</td>
+            <td>Varies</td>
+        </tr>
+    </tbody>
+    </table>
+    
+    
+</body>
+</html>

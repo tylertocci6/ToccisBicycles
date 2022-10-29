@@ -1,0 +1,291 @@
+/*
+*****************************************************************************
+Title: First CSS Format
+Use: To format the Bicycle Website 
+Author: Tyler Tocci
+School/Term: Southern Illinois University, Fall 2022
+Developed: Oct 29, 2022
+Tested: Oct 29, 2022; Passed on Edge and Chrome browsers.
+******************************************************************************
+*/
+
+
+/*Was a 10 pixel margin on the entire page */
+* {margin: 1.3793%;}
+
+/*Was a 10 pixel padding to all headings */
+h1, h2 {padding: 1.3793%;}
+
+/*Was a 5 pixel left and right padding to paragraph tags */
+p {padding-right: 0.6897%;
+    padding-left: 0.6897%;}
+
+/*Setting the body width was originally 725 pixels */
+body {width: 90%;
+max-width: 1024px;
+font-size: 100%;}
+
+/*Was a 10 pixel left padding to the list */
+ul li {padding-left: 1.3793%;}
+
+/*Applying blue border with rounded edges to the image */
+#bike {border: 10px solid blue;
+border-radius: 200px;}
+
+/*Using the position attribute */
+figure {position: absolute;
+left: 68.9655%;}
+
+figure {width: 100%;
+    max-width: 100px;}
+
+figcaption {
+    display: block;
+    font-weight: bold;
+    padding-top: .25em;
+    margin-bottom: 1em;
+}
+
+/*The image rollover*/
+#bike {background-image: url("img/green\ bike.jpg");
+    width: 100%;
+    padding-bottom: 72%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;}
+
+#bike:hover {background-image: url("img/blue\ bike.jpg");}
+
+
+
+/*Adding a light background to the entire page */
+body{background: rgb(188, 219, 215)}
+
+h1 {font-size: 1.75em;}
+h2 {font-size: 1.5em;}
+footer p {font-size: .75em}
+
+
+
+/*Used to format the rentals page*/
+*{margin: 0; padding: 0;}
+
+body{  width: 99%;
+    max-width: 1024px;
+    margin: 1.5593% auto;
+    border: 1px solid black; 
+    font-size: 100%;}
+    
+    h2{ padding: 1em;
+    font-size: 1.5em;}
+    
+    header{ border-bottom: 2px solid black;}
+    
+    main{height: 36.3825%;
+    width: 62.3701%;
+    float: left;
+    border-right: 2px solid black; }
+
+   
+    aside{ width: 37.4220%;
+    float: right;}
+    
+    footer{ clear: both;
+    border-top: 2px solid black;
+    font-size: .75em}
+
+    ul{ margin-left: 6.2370%;}
+
+    body img{ margin-left: 0.6237%;
+    width: 100%;
+    max-width: 100px;}
+
+/* The horizontal navigation menu */
+#nav_menu ul{list-style-type: none;}
+#nav_menu ul li{float: left;}
+#nav_menu ul li a {
+text-align:center; 
+display: block;
+width: 9em;
+padding: .8em;
+text-decoration: none;
+background-color:blue;
+color: white;
+font-weight: bold;
+border-left: 2px solid white;
+border-right: 2px solid white;}
+#nav_menu ul li a.current{color: yellow;}
+
+
+/*Used to format the services table */
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    white-space: nowrap;
+    
+    }
+caption {
+    font-weight: bold;
+    font-size: 1.25em;}    
+th, td {
+    border: 1px solid black;
+    padding: .2em .7em;
+    text-align: right; 
+    background-color: rgba(78, 136, 221, 0.404);}
+th {text-align: left}
+thead {background-color: rgb(234, 252, 134);}
+
+p.tables {float: left;
+margin: 2em;}
+
+#cat_1, #cat_2 {text-align: center;
+    background-color: rgb(19, 180, 172);
+    font-weight: bold;}
+
+
+/*Used to format the contact page */
+fieldset{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+legend{
+    color:rgba(0, 4, 255, 0.404);
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+}
+
+label, input, select{
+    font-size: 90%;
+}
+
+label{
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+
+input, select{
+    
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+
+input:required, input[required]{
+    border: 3px solid red;
+}
+
+input:valid{
+    border:1px solid black;
+}
+
+input:invalid{
+    box-shadow: none;
+}
+
+br{
+    clear: both;
+}
+
+#buttons input{
+    width: 10em;
+}
+
+textarea{
+    height: 5em;
+    width: 25em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#state{
+    width: 12.5em;
+}
+
+
+/* Response page */
+#submission{
+    font-size: 200%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/* Hides the mobile menu initially */
+#mobile_menu {
+    display: none;}
+  
+ /* Hides the mobile menu initially */
+#mobile_menu {
+    display: none;}
+
+/* Shrinks the nav menu */
+@media only screen and (max-width: 1024px) {
+    #nav_menu ul li a{font-size: .875em;}
+}
+  
+  /* Tablet portrait to standard 960 */
+  @media only screen and (max-width: 959px) {
+    #nav_menu {margin-left: auto;
+        margin-right: auto;
+        width: 50%;}
+
+    #nav_menu ul li a {font-size: .75em;
+    width: 60%;}
+    h1 {font-size: 1.25em;}
+    h2 {font-size: 1em;}
+    footer p {font-size: .60em}
+
+    aside{ float: none;}
+    body main{border-right: none;}
+
+    table{white-space: pre-wrap;}
+
+  }
+  
+  /* Mobile landscape to tablet portrait and displays mobile menu */
+  @media only screen and (max-width: 767px) {
+    #nav_menu{display: none;}
+    #mobile_menu{display: block;}
+    .slick_menu {background-color: #facd8a !important;}
+  
+    h1 {font-size: 1.25em;}
+    h2 {font-size: 1em;}
+    footer p {font-size: .60em}
+
+    aside{ float: none;}
+    body main{border-right: none;}
+
+
+    table {width: 60%;}
+    th, td{display: block;}
+    thead, #cat_2{display: none;}
+    tr td:first-child{font-weight: bold;
+    font-size: 120%;
+    background-color: silver}
+    
+
+    /* Contact Page */
+    fieldset{
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        font-size: 120%;}
+
+    #buttons{width: 8em; }
+
+    input, #state{width: 10em; }
+
+    #sub{
+        text-align: right;
+        font-size: 100%; }
+
+    #sub legend{text-align: left;}
+  }

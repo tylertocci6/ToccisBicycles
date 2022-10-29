@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<!--
+*****************************************************************************
+Title: Bicycle Shop Response Page
+Use: Submission page for contact
+Author: Tyler Tocci
+School/Term: Southern Illinois University, Fall 2022
+Developed: Oct 29, 2022
+Tested: Oct 29, 2022; Passed on Edge and Chrome browsers.
+******************************************************************************
+-->
+
+<!--Head containing the title of the website.-->
+
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Tocci's Bicycles</title>
+        <meta name="description" content="The website for Tocci's Bicylces
+        that contains basic information about the business">
+        <meta name="keywords" content="bicycles, BMX, cruiser, Pittsburgh, 
+        Pennsylvania">
+        <link rel= "stylesheet" href="First_Format.css">
+
+        <!--Code for SlickNav plugin-->
+        <link rel="stylesheet" href="mobile_menu/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="mobile_menu/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document) .ready (function() {
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        
+        <!--Code for Favicon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Submission</h1>
+    </header>
+
+<!--The navigation menu-->
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="rentals.htm">Rentals</a></li>
+        <li><a href="sales.htm">Sales</a></li>
+        <li><a href="services.htm">Services</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+    </ul>
+</nav>
+
+<p id="submission">Your message has been submitted.
+</p>
+
+</body>
+</html>
